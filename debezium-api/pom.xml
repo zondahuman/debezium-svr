@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>debezium-svr</artifactId>
+        <groupId>com.abin.lee</groupId>
+        <version>1.0.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.abin.lee</groupId>
+    <artifactId>debezium-api</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+
+
+
+    <dependencies>
+        <dependency>
+            <artifactId>debezium-common</artifactId>
+            <groupId>com.abin.lee</groupId>
+            <version>1.0.0-SNAPSHOT</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/io.debezium/debezium-connector-mysql -->
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-connector-mysql</artifactId>
+            <version>${debezium.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-embedded</artifactId>
+            <version>${debezium.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.debezium/debezium-core -->
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-core</artifactId>
+            <version>${debezium.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.debezium/debezium-parent -->
+        <dependency>
+            <groupId>io.debezium</groupId>
+            <artifactId>debezium-parent</artifactId>
+            <version>${debezium.version}</version>
+            <type>pom</type>
+        </dependency>
+
+
+
+
+    </dependencies>
+
+
+
+
+
+
+</project>
